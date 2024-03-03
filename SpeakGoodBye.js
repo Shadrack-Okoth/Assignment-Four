@@ -11,16 +11,21 @@
 // var byeSpeaker =
 
 // DO NOT attach the speakWord variable to the 'byeSpeaker' object.
-(function (window){
-  var byeSpeaker={};
-    var speakWord = "Good Bye";
+(function (window) {
+  var byeSpeaker = {};
+
+     speakWord = "Good Bye";
+
+
 // STEP 8: Rewrite the 'speak' function such that it is attached to the
 // byeSpeaker object instead of being a standalone function.
 // See Lecture 52, part 2
-byeSpeaker.speak=function (name) {
-  console.log(speakWord + " " + byeSpeaker.name);
-}
-window.byeSpeaker = byeSpeaker;
+  byeSpeaker.speak = function (name) {
+    console.log(speakWord + " " + name)
+  }
+ 
+  window.byeSpeaker = byeSpeaker;
+
 })(window);
 
 // STEP 9: Expose the 'byeSpeaker' object to the global scope. Name it
